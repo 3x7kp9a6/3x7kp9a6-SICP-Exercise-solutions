@@ -1,0 +1,10 @@
+(define a 2)
+(define b 4)
+(define c 6)
+(define (sq x) (* x x))
+(cond ((
+       and (< a b)(< a c))(+ (sq b)(sq c)))
+      ((
+       and (< b a)(< b c))(+ (sq a)(sq c)))
+      (
+       else (+ (sq a)(sq b))))
